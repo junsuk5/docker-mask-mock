@@ -4,14 +4,14 @@ from fastapi import FastAPI
 
 from mock_data import data
 
-import numpy as np
-
-app = FastAPI()
+app = FastAPI(
+    title="공적 마스크 정보 Mock 데이터",
+)
 
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "생존코딩 오준석"}
 
 
 #
@@ -28,15 +28,22 @@ async def root():
 
 @app.get("/mask")
 async def get_mask_infos(page: Union[int, None] = None, limit: Union[int, None] = None):
-    if page is None and limit is None:
-        return data
-    elif page is not None and limit is not None:
-        stores = data["stores"]
-        result = list(chunks(stores, limit))
+    try:
+        if page is None and limit is None:
+            return data
+        elif page is not None and limit is not None:
+            stores = data["stores"]
+            result = list(chunks(stores, limit))
 
+            return {
+                "count": len(result[page]),
+                "stores": result[page]
+            }
+
+    except IndexError:
         return {
-            "count": len(result[page]),
-            "stores": result[page]
+            "count": 0,
+            "stores": []
         }
 
     return {
