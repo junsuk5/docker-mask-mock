@@ -1,3 +1,217 @@
+key_info = {
+    "id": "eOhMkTGRD9hW",
+    "displayName": "session",
+    "attributes": {
+        "6SI_gcz2h1l3": {
+            "id": "6SI_gcz2h1l3",
+            "displayName": "user2_img",
+            "type": {
+                "name": "Image",
+                "data": None
+            }
+        },
+        "C90Y851TGjAd": {
+            "id": "C90Y851TGjAd",
+            "displayName": "user2_id",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "MAjnegS2sUz_": {
+            "id": "MAjnegS2sUz_",
+            "displayName": "user3_intro",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "eHhghHsGMFV0": {
+            "id": "eHhghHsGMFV0",
+            "displayName": "user3_img",
+            "type": {
+                "name": "Image",
+                "data": None
+            }
+        },
+        "dc4kWp2OMZBr": {
+            "id": "dc4kWp2OMZBr",
+            "displayName": "ppt",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "0TNvHfMiEEEE": {
+            "id": "0TNvHfMiEEEE",
+            "displayName": "user2_intro",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "95fb8cVqD37E": {
+            "id": "95fb8cVqD37E",
+            "displayName": "user1_intro",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "tsHALc4rYA5Z": {
+            "id": "tsHALc4rYA5Z",
+            "displayName": "session_day",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "pShJsKRFz_mR": {
+            "id": "pShJsKRFz_mR",
+            "displayName": "description",
+            "type": {
+                "name": "Text",
+                "data": None
+            }
+        },
+        "U2G0DHalEQHs": {
+            "id": "U2G0DHalEQHs",
+            "displayName": "title",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "INYXb7hNIfMU": {
+            "id": "INYXb7hNIfMU",
+            "displayName": "session_type",
+            "type": {
+                "name": "Enum",
+                "data": {
+                    "enumId": "1cb8b207-494f-444c-83a1-c66f9e757198"
+                }
+            }
+        },
+        "9yVKHSTkTNmF": {
+            "id": "9yVKHSTkTNmF",
+            "displayName": "live_img_url",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "kwC3iO8Lbj6D": {
+            "id": "kwC3iO8Lbj6D",
+            "displayName": "user1_id",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "PAifZyJwjcmh": {
+            "id": "PAifZyJwjcmh",
+            "displayName": "user1_img",
+            "type": {
+                "name": "Image",
+                "data": None
+            }
+        },
+        "id": {
+            "id": "id",
+            "displayName": "id",
+            "type": {
+                "name": "Integer",
+                "data": None
+            }
+        },
+        "GgWcMRm0cNSS": {
+            "id": "GgWcMRm0cNSS",
+            "displayName": "track",
+            "type": {
+                "name": "List(Enum)",
+                "data": {
+                    "enumId": "b58c69e3-e658-42d1-bfcf-9167eea6ce0d"
+                }
+            }
+        },
+        "Yk7Sc6yEUma7": {
+            "id": "Yk7Sc6yEUma7",
+            "displayName": "session_date",
+            "type": {
+                "name": "DateTime",
+                "data": None
+            }
+        },
+        "0xTNIhifz0t7": {
+            "id": "0xTNIhifz0t7",
+            "displayName": "company",
+            "type": {
+                "name": "Enum",
+                "data": {
+                    "enumId": "c24f4e86-e670-4192-bf88-8a06b59b1ec0"
+                }
+            }
+        },
+        "b1ERX6ZDBfTy": {
+            "id": "b1ERX6ZDBfTy",
+            "displayName": "user3_id",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "WCrhrhpRLki9": {
+            "id": "WCrhrhpRLki9",
+            "displayName": "meetup_register_link",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "DvJr7DiMNfhG": {
+            "id": "DvJr7DiMNfhG",
+            "displayName": "live_qna_url",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "p5Z5M0DP08AF": {
+            "id": "p5Z5M0DP08AF",
+            "displayName": "live_channel_url",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "I729yvCqaONJ": {
+            "id": "I729yvCqaONJ",
+            "displayName": "session_vod_link",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        },
+        "L9WirNOAVF4J": {
+            "id": "L9WirNOAVF4J",
+            "displayName": "session_img",
+            "type": {
+                "name": "Image",
+                "data": None
+            }
+        },
+        "X_7c2hMWtxne": {
+            "id": "X_7c2hMWtxne",
+            "displayName": "tags",
+            "type": {
+                "name": "String",
+                "data": None
+            }
+        }
+    }
+}
+
+
 if_kakao_data = [
     {
         "6SI_gcz2h1l3": "",

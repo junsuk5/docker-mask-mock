@@ -4,6 +4,7 @@ from fastapi import FastAPI
 
 from mock_data import data
 from if_kakao_data import if_kakao_data
+from if_kakao_data import key_info
 
 app = FastAPI(
     title="Mock 데이터 문서",
@@ -25,6 +26,11 @@ async def root():
 # @app.get("/hello/{name}")
 # async def say_hello(name: str):
 #     return {"message": f"Hello {name}"}
+
+@app.get("/ifKakao/keyInfo")
+async def get_if_kakao_key_info():
+    return key_info
+
 
 @app.get("/ifKakao")
 async def get_if_kakao_datas():
