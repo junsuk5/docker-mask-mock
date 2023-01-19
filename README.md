@@ -1,12 +1,54 @@
 # 마스크 재고 앱 Mock Data
 
-# docker 이미지 빌드
+# docker 이미지 빌드 및 업로드 순서
 m1 맥에서 x86에서 실행되도록 빌드 --platform 명시
 ```
-docker build -t --platform linux/amd64 mask .  
+docker build -t mask --platform linux/amd64 .  
 ```
 
-# docker 컨테이너 실행
+태깅
+```shell
+docker tag mask junsuk5/mask:latest           
+```
+
+업로드
+```shell
+docker push junsuk5/mask:latest           
+```
+
+# GCP 에서 실행 순서
+실행중인 docker container 확인
+```shell
+sudo docker ps -a
+```
+
+스톱
+```shell
+sudo docker stop [id 3자리]
+```
+
+컨테이너 삭제
+```shell
+sudo docker rm [id 3자리]
+```
+
+이미지 다시 받기
+```shell
+sudo docker pull junsuk5/mask
+```
+
+GCP 용량 모자르면 도커 다 날림
+```shell
+sudo docker system prune
+```
+
+실행
+```shell
+sudo docker run -d --name mock-json -p 3000:80 junsuk5/mask 
+```
+
+
+# 로컬 docker 컨테이너 실행
 
 ```
 docker run -d --name mask -p 8080:80 mask
