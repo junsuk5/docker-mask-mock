@@ -18,5 +18,10 @@ http://localhost:8080/docs
 
 ## 실행 예
 
-http://localhost:8080/mask
-http://localhost:8080/mask?page=0&limit=20
+- http://localhost:8080/mask
+- http://localhost:8080/mask?page=0&limit=20
+
+## 로컬 실행
+```shell
+uvicorn main:app --reload
+```
